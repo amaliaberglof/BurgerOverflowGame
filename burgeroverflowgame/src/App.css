@@ -44,16 +44,39 @@ body {
   font-family: "Alfa Slab One", cursive !important;
 }
 
-.section {
+.section p {
   margin: auto;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   width: 70%;
   max-width: 700px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; */
+}
+
+p span {
+  display: flex;
+}
+
+.logoImg {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  margin-bottom: 10px;
+  display: inherit;
+}
+
+.logoImg2 {
+  width: 100px;
+  margin: auto;
+  margin-bottom: 10px;
+  display: inherit;
 }
 
 .section__title {
-  color: var(--yellow);
   font-family: "Alfa Slab One", cursive !important;
+  text-align: center;
 }
 
 .section__row {
@@ -71,4 +94,11 @@ body {
 
 .section__column img {
   width: 100%;
+}
+
+.section-divider {
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }

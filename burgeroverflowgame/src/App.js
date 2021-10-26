@@ -1,5 +1,16 @@
 import "./App.css";
-import placeholderImg from "./images/placeholder-img.jpg";
+import amalia from "./images/amalia.png";
+import albin from "./images/albin.png";
+import bosen from "./images/bosen.png";
+import ao from "./images/ao.png";
+import przemyslaw from "./images/przemyslaw.png";
+import cheeseDivider from "./images/background_cheese.jpg";
+import reactlogo from "./images/react_logo.png";
+import jslogo from "./images/javascript_logo.png";
+import tslogo from "./images/typescript_logo.png";
+import socketlogo from "./images/socket_logo.png";
+import blenderlogo from "./images/blender_logo.png";
+import threejslogo from "./images/three-js-logo.png";
 
 function App() {
   const scrollIntoView = (id) => {
@@ -12,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           LOGO
         </a>
         <button
@@ -29,11 +40,6 @@ function App() {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
-              </a>
-            </li>
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -78,9 +84,9 @@ function App() {
         </svg>
       </div>
       <div className="section section-2">
-        <h2 id="section-2" className="section__title">
-          About the project
-        </h2>
+        <div className="section__title section__title--head">
+          <h2 id="section-2"> 🍅 About the project</h2>
+        </div>
         <p>
           Burger Overflow is an augmented advertisement, which uses gamification
           in order to drive interest in public spaces. The project was made as a
@@ -98,6 +104,11 @@ function App() {
         </p>
         <h4 className="section__title">Tech stack</h4>
         <p>
+          <span>
+            <img className="logoImg2" src={reactlogo} />
+            <img className="logoImg2" src={jslogo} />
+            <img className="logoImg2" src={tslogo} />
+          </span>
           Both the client (mobile web app), host (display) and the server was
           built using <b>React</b>, <b>Javascript</b> and <b>Typescript</b>.
           This enables us to create a lightweight multi-browser application that
@@ -107,8 +118,9 @@ function App() {
           application from users in public spaces.
         </p>
         <p>
+          <img className="logoImg2" src={socketlogo} />
           The client and the host communicates with each other and the server
-          through the library <a href="www.socket.io">socket.io</a>. That
+          through the library <a href="https://socket.io/">socket.io</a>. That
           enables us to have a real-time rendering of user movements. The user
           can therefor send actions to the large display (clicks, sensor data),
           and the host can send data to the user (game has ended, discounts).
@@ -116,21 +128,30 @@ function App() {
           understand how their movements are mapped by the game.
         </p>
         <p>
+          <img
+            className="logoImg"
+            src="https://img.icons8.com/ios/100/000000/gyroscope.png"
+          />
           The gyroscope data from the phone is collected by the client, cleaned
           and mapped to an accelerometer factor, in order to make the game more
           interactive and not as static.
         </p>
         <p>
-          The graphics and the rendering of them were made using Blender and
-          Three.js. Three.js enables us to create the 3D graphics and render the
-          scenes created in Blender.
+          <span>
+            <img className="logoImg2" src={blenderlogo} />
+            <img className="logoImg2" src={threejslogo} />
+          </span>
+          The graphics and the rendering of them were made using Blender and{" "}
+          <a href="https://threejs.org/">Three.js</a>. Three.js enables us to
+          create the 3D graphics and render the scenes created in Blender.
         </p>
         <h4 className="section__title">Related work</h4>
         <p>Insert text here</p>
       </div>
+      <img src={cheeseDivider} alt="Cheese" className="section-divider" />
       <div className="section section-3">
-        <h2 id="section-3" className="section__title">
-          Future development
+        <h2 id="section-3" className="section__title section__title--head">
+          🥯 Future development
         </h2>
         <p>
           The project has been user tested during two sessions, one during
@@ -139,29 +160,30 @@ function App() {
         <h4 className="section__title">Challenges and obstacles</h4>
         <p>Insert text here</p>
       </div>
+      <img src={cheeseDivider} alt="Cheese" className="section-divider" />
       <div className="section section-4">
-        <h2 id="section-4" className="section__title">
-          About us
+        <h2 id="section-4" className="section__title section__title--head">
+          🧀 About us
         </h2>
         <div className="section__row">
           <div className="section__column">
-            <img src={placeholderImg} />
+            <img src={albin} alt="Albin" />
             Albin Matson Gyllang
           </div>
           <div className="section__column">
-            <img src={placeholderImg} />
+            <img src={amalia} alt="Amalia" />
             Amalia Berglöf
           </div>
           <div className="section__column">
-            <img src={placeholderImg} />
+            <img src={ao} alt="Ao" />
             Ao Xu
           </div>
           <div className="section__column">
-            <img src={placeholderImg} />
+            <img src={bosen} alt="Bosen" />
             Bosen Cheng
           </div>
           <div className="section__column">
-            <img src={placeholderImg} />
+            <img src={przemyslaw} alt="Przemyslaw" />
             Przemyslaw Kowalewski
           </div>
         </div>
