@@ -209,23 +209,23 @@ function App() {
         </h2>
         <div className="section__row">
           <div className="section__column">
-            <img src={albin} alt="Albin" />
+            <img className="image-100" src={albin} alt="Albin" />
             Albin Matson Gyllang
           </div>
           <div className="section__column">
-            <img src={amalia} alt="Amalia" />
+            <img className="image-100" src={amalia} alt="Amalia" />
             Amalia Berglöf
           </div>
           <div className="section__column">
-            <img src={ao} alt="Ao" />
+            <img className="image-100" src={ao} alt="Ao" />
             Ao Xu
           </div>
           <div className="section__column">
-            <img src={bosen} alt="Bosen" />
+            <img className="image-100" src={bosen} alt="Bosen" />
             Bosen Cheng
           </div>
           <div className="section__column">
-            <img src={przemyslaw} alt="Przemyslaw" />
+            <img className="image-100" src={przemyslaw} alt="Przemyslaw" />
             Przemyslaw Kowalewski
           </div>
         </div>

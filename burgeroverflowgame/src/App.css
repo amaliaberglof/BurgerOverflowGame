@@ -101,6 +101,7 @@ p span {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 40px;
+  transform: none !important;
 }
 
 .image-100 {
@@ -119,4 +120,12 @@ img {
 
 img:hover {
   transform: scale(1.2);
+}
+
+.navbar-toggler-icon {
+  background-image: url("https://img.icons8.com/ios-glyphs/30/000000/beefburger.png") !important;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent !important;
 }
