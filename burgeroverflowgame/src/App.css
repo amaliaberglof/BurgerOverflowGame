@@ -1,0 +1,74 @@
+:root {
+  --yellow: #e6a22e;
+}
+
+body {
+  font-family: "Zen Antique", serif;
+}
+
+.App {
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  background-color: var(--yellow) !important;
+  z-index: 1;
+}
+
+.custom-shape-divider-top-1635227694 {
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1635227694 svg {
+  position: relative;
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top-1635227694 .shape-fill {
+  fill: #e6a22e;
+}
+
+.section-1 {
+  background-color: var(--yellow);
+  height: 60vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alfa Slab One", cursive !important;
+}
+
+.section {
+  margin: auto;
+  padding-bottom: 40px;
+  width: 70%;
+  max-width: 700px;
+}
+
+.section__title {
+  color: var(--yellow);
+  font-family: "Alfa Slab One", cursive !important;
+}
+
+.section__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.section__column {
+  margin: 10px;
+  display: grid;
+  text-align: center;
+  width: 20%;
+  font-size: 12px;
+}
+
+.section__column img {
+  width: 100%;
+}
