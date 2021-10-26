@@ -11,6 +11,7 @@ import tslogo from "./images/typescript_logo.png";
 import socketlogo from "./images/socket_logo.png";
 import blenderlogo from "./images/blender_logo.png";
 import threejslogo from "./images/three-js-logo.png";
+import promopad from "./images/promopad.png";
 
 function App() {
   const scrollIntoView = (id) => {
@@ -146,7 +147,48 @@ function App() {
           create the 3D graphics and render the scenes created in Blender.
         </p>
         <h4 className="section__title">Related work</h4>
-        <p>Insert text here</p>
+        <p>
+          <span>
+            <img
+              className="image-100"
+              src="https://www.valtech.com/49ee47/globalassets/14-sweden/02-images/04-insights/valtech-store/_mg_7040.jpg?w=940&h=530&mode=crop&format=jpg"
+            />
+          </span>
+          <b>
+            Valtech Connected Shoe (2017)
+            <br />
+          </b>
+          Valtech Connected Shoe was a project by the company Valtech, where a
+          built in gyroscope in the shoe made the user the controller of the
+          rendering of the shoe on a big display. The user could change color of
+          the shoe and also get detailed information about the shoe.
+        </p>
+        <p>
+          <span>
+            <img
+              className="image-100"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/448510/capsule_616x353.jpg?t=1594197612"
+            />
+          </span>
+          <b>
+            Overcooked (2016)
+            <br />
+          </b>
+          Overcooked is an isometric 2.5D game where you work in a kitchen. The
+          food is prepared at different stations in the kitchen, once the food
+          is cooked it has to be plated in a certain order, and then served.
+        </p>
+        <p>
+          <span>
+            <img className="image-100" src={promopad} />
+          </span>
+          <b>
+            Promopad (2004)
+            <br />
+          </b>
+          Promopad is a personalized in-store e-commerce tool, that creates an
+          augmented reality shopping experience.
+        </p>
       </div>
       <img src={cheeseDivider} alt="Cheese" className="section-divider" />
       <div className="section section-3">
