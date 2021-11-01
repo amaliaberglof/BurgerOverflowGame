@@ -12,6 +12,7 @@ import socketlogo from "./images/socket_logo.png";
 import blenderlogo from "./images/blender_logo.png";
 import threejslogo from "./images/three-js-logo.png";
 import promopad from "./images/promopad.png";
+import burgerLogo from "./images/burgerLogo.JPG"
 
 function App() {
   const scrollIntoView = (id) => {
@@ -25,7 +26,7 @@ function App() {
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="/">
-          LOGO
+          <img className="logoImg2" src={burgerLogo} />
         </a>
         <button
           className="navbar-toggler"
