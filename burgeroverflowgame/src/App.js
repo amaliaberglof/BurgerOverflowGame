@@ -237,7 +237,16 @@ function App() {
           development phase and one final presentation.
         </p>
         <h4 className="section__title">Challenges and obstacles</h4>
-        <p>Insert text here</p>
+
+        <p><b>Server</b></p>
+        <p>With Socket.IO, we implement the client-host-server structure to connect the player with the server.  We solve the HTTPS problem with the "mkcert" tool. In the end, we successfully hosted our website on a Raspberry Pie. </p>
+        <p><b>3D model and lighting </b></p>
+        <p>The models used inside this game are collected from the free right sources. Then we polished them to make the game objects more attractive. We fixed the shadow problem of react-three-fiber by setting the shadow bias.We also used environmental lighting to give the environment a warmer feeling.</p>
+        <p><b>Control </b></p>
+        <p>We implement the controlling using a gyroscope sensor on the phone. The rotation data from the gyroscope is the Euler angle's three-axis. To avoid the gimbal lock of the Euler angle, we only used data from two axis and made the controlling intuitive enough for new players.</p>
+        <p><b>Sound</b></p>
+        <p>We used different sounds for different feedbacks inside the game. Apart from the background music, we also installed the real life kitchen noise in the background to offer a more realistic atmosphere. </p>
+      
       </div>
       <div className="section section-4">
         <h2 id="section-4" className="section__title section__title--head">
@@ -285,8 +294,8 @@ function App() {
           structure, as well as the interviews and user questions.
         </p>
         <p>
-          <b>Ao and Bosen</b> has been working with graphics of the game, making
-          everything look delicious.
+          <b>Ao and Bosen</b> have been working with graphics of the game, making
+          everything look delicious. As well as implementing the end game animation.
         </p>
         <p>
           <b>Przemyslaw</b> has been in charge of keeping the project together
