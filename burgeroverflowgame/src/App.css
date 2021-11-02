@@ -34,6 +34,43 @@ body {
   fill: #e6a22e;
 }
 
+.custom-shape-divider-bottom-1635876791 {
+  margin-bottom: -100px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1635876791 svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-bottom-1635876791 .shape-fill {
+  fill: #e6a22e;
+}
+
+.custom-shape-divider-top-1635876987 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: -100px;
+}
+
+.custom-shape-divider-top-1635876987 svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-top-1635876987 .shape-fill {
+  fill: #e6a22e;
+}
+
 .section-1 {
   background-color: var(--yellow);
   height: 60vh;
@@ -42,6 +79,17 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Alfa Slab One", cursive !important;
+}
+
+.section-2 {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+
+.section-3 {
+  background-color: var(--yellow);
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .section p {
@@ -131,7 +179,7 @@ img {
 }
 
 img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .navbar-toggler-icon {

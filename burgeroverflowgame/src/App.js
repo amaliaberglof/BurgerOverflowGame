@@ -13,6 +13,7 @@ import blenderlogo from "./images/blender_logo.png";
 import threejslogo from "./images/three-js-logo.png";
 import promopad from "./images/promopad.png";
 import burgerLogo from "./images/burgerLogo.JPG";
+import userdemo from "./images/userdemo.jpg";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -105,6 +106,11 @@ function App() {
       </div>
       <div className="section section-2">
         <div className="section__title section__title--head">
+          <img
+            src={userdemo}
+            className="img-width-500 image-100"
+            alt="user demo"
+          />
           <h2 id="section-2"> 🍅 About the project</h2>
         </div>
         <p>
@@ -228,25 +234,95 @@ function App() {
           QR codes.
         </p>
       </div>
+      <div className="custom-shape-divider-bottom-1635876791">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            className="shape-fill"
+          ></path>
+        </svg>
+      </div>
       <div className="section section-3">
         <h2 id="section-3" className="section__title section__title--head">
           🥯 Future development
         </h2>
         <p>
           The project has been user tested during two sessions, one during
-          development phase and one final presentation.
+          development phase and one final presentation. What we found was that
+          some managed to "hack the game", and a future development could be to
+          challenge users when they have played enough times, or for long
+          enough. The challenge could for example be that the plates start
+          moving. Future development could also be to build on the game logic
+          that's built into the game already, by for example adding extra
+          feedback to the users by presenting them with their current score, or
+          by adding other modalities such as vibration when you lose.
         </p>
         <h4 className="section__title">Challenges and obstacles</h4>
-
-        <p><b>Server</b></p>
-        <p>With Socket.IO, we implement the client-host-server structure to connect the player with the server.  We solve the HTTPS problem with the "mkcert" tool. In the end, we successfully hosted our website on a Raspberry Pie. </p>
-        <p><b>3D model and lighting </b></p>
-        <p>The models used inside this game are collected from the free right sources. Then we polished them to make the game objects more attractive. We fixed the shadow problem of react-three-fiber by setting the shadow bias.We also used environmental lighting to give the environment a warmer feeling.</p>
-        <p><b>Control </b></p>
-        <p>We implement the controlling using a gyroscope sensor on the phone. The rotation data from the gyroscope is the Euler angle's three-axis. To avoid the gimbal lock of the Euler angle, we only used data from two axis and made the controlling intuitive enough for new players.</p>
-        <p><b>Sound</b></p>
-        <p>We used different sounds for different feedbacks inside the game. Apart from the background music, we also installed the real life kitchen noise in the background to offer a more realistic atmosphere. </p>
-      
+        <p>
+          <b>Server</b>
+        </p>
+        <p>
+          With Socket.IO, we implement the client-host-server structure to
+          connect the player with the server which enabled us to send real time
+          data. To be able to establish a connection during development and use
+          gyroscope data, we had to solve the HTTPS issues by creating a
+          certificate locally. This was done with the "mkcert" tool. To be able
+          to do this in a demo setting, we hosted our website with a Raspberry
+          Pi.{" "}
+        </p>
+        <p>
+          <b>3D model and lighting</b>
+        </p>
+        <p>
+          The models used inside this game are collected from the free right
+          sources. Then we polished them to make the game objects more
+          attractive, such as the juicyness of the tomato. We fixed the shadow
+          problem of react-three-fiber by setting the shadow bias. We also used
+          environmental lighting to give the kitchen a warmer feeling.
+        </p>
+        <p>
+          <b>Controls</b>
+        </p>
+        <p>
+          We implemented the controlling of the position by using the phone's
+          built in gyroscope sensor. However, deciding on a mapping structure
+          that felt intuitive for the user, and that made the game feel
+          realistic and immersive, was a real challenge. Also, communicating to
+          the user how the controls work was also tricky. The rotation data from
+          the gyroscope is the Euler angle's three-axis, and to avoid the gimbal
+          lock of the Euler angle, we only used data from two axis. This made
+          the controlling intuitive enough for new players, and we also included
+          this in the onboarding.
+        </p>
+        <p>
+          <b>Sound</b>
+        </p>
+        <p>
+          We used different sounds for different feedbacks inside the game.
+          Apart from the background music, we also installed the real life
+          kitchen noise in the background to offer a more realistic atmosphere.
+          However, adding sound effects in a public space is a tricky question.
+          We didn't have the opportunity to evaluate with real users wheter or
+          not the sounds felt fitting in a public environment.
+        </p>
+      </div>
+      <div className="custom-shape-divider-top-1635876987">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            className="shape-fill"
+          ></path>
+        </svg>
       </div>
       <div className="section section-4">
         <h2 id="section-4" className="section__title section__title--head">
@@ -294,8 +370,9 @@ function App() {
           structure, as well as the interviews and user questions.
         </p>
         <p>
-          <b>Ao and Bosen</b> have been working with graphics of the game, making
-          everything look delicious. As well as implementing the end game animation.
+          <b>Ao and Bosen</b> have been working with graphics of the game,
+          making everything look delicious. As well as implementing the end game
+          animation.
         </p>
         <p>
           <b>Przemyslaw</b> has been in charge of keeping the project together
