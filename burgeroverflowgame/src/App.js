@@ -12,7 +12,25 @@ import socketlogo from "./images/socket_logo.png";
 import blenderlogo from "./images/blender_logo.png";
 import threejslogo from "./images/three-js-logo.png";
 import promopad from "./images/promopad.png";
-import burgerLogo from "./images/burgerLogo.JPG"
+import burgerLogo from "./images/burgerLogo.JPG";
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBjeiwdQlf1sQS1EIkBxlvUSbPBDdZ5-7s",
+  authDomain: "burgeroverflowgame.firebaseapp.com",
+  projectId: "burgeroverflowgame",
+  storageBucket: "burgeroverflowgame.appspot.com",
+  messagingSenderId: "1039364363618",
+  appId: "1:1039364363618:web:c287d1eb7a44fc3b49083b",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 function App() {
   const scrollIntoView = (id) => {
@@ -151,7 +169,7 @@ function App() {
         <p>
           <span>
             <img
-              className="image-100"
+              className="image-100 img-width-500"
               src="https://www.valtech.com/49ee47/globalassets/14-sweden/02-images/04-insights/valtech-store/_mg_7040.jpg?w=940&h=530&mode=crop&format=jpg"
             />
           </span>
@@ -162,12 +180,14 @@ function App() {
           Valtech Connected Shoe was a project by the company Valtech, where a
           built in gyroscope in the shoe made the user the controller of the
           rendering of the shoe on a big display. The user could change color of
-          the shoe and also get detailed information about the shoe.
+          the shoe and also get detailed information about the shoe. This
+          project served as inspiration of what gyroscope controls can look
+          like.
         </p>
         <p>
           <span>
             <img
-              className="image-100"
+              className="image-100 img-width-500"
               src="https://cdn.cloudflare.steamstatic.com/steam/apps/448510/capsule_616x353.jpg?t=1594197612"
             />
           </span>
@@ -177,21 +197,37 @@ function App() {
           </b>
           Overcooked is an isometric 2.5D game where you work in a kitchen. The
           food is prepared at different stations in the kitchen, once the food
-          is cooked it has to be plated in a certain order, and then served.
+          is cooked it has to be plated in a certain order, and then served. The
+          game served as inspiration for some parts of the game.
         </p>
         <p>
           <span>
-            <img className="image-100" src={promopad} />
+            <img className="image-100 img-width-500" src={promopad} />
           </span>
           <b>
             Promopad (2004)
             <br />
           </b>
           Promopad is a personalized in-store e-commerce tool, that creates an
-          augmented reality shopping experience.
+          augmented reality shopping experience. The tool was one of the first
+          of its kind to include AR in the setting of in-store shopping, and
+          enables the user to get more information about the product they are
+          buing.
+        </p>
+        <p>
+          <b>
+            Web-Based Integration of Mobile Devices Into Public Space Games
+            (2018){" "}
+            <a href="https://theses.fh-hagenberg.at/system/files/pdf/Temper18.pdf">
+              [Link]
+            </a>
+            <br />
+          </b>
+          This paper served as a basis of understanding of what public space
+          games can be, and techniques that can be used, such as websockets and
+          QR codes.
         </p>
       </div>
-      <img src={cheeseDivider} alt="Cheese" className="section-divider" />
       <div className="section section-3">
         <h2 id="section-3" className="section__title section__title--head">
           🥯 Future development
@@ -203,7 +239,6 @@ function App() {
         <h4 className="section__title">Challenges and obstacles</h4>
         <p>Insert text here</p>
       </div>
-      <img src={cheeseDivider} alt="Cheese" className="section-divider" />
       <div className="section section-4">
         <h2 id="section-4" className="section__title section__title--head">
           🧀 About us
@@ -212,28 +247,76 @@ function App() {
           <div className="section__column">
             <img className="image-100" src={albin} alt="Albin" />
             Albin Matson Gyllang
+            <br />
+            agyllang@kth.se
           </div>
           <div className="section__column">
             <img className="image-100" src={amalia} alt="Amalia" />
             Amalia Berglöf
+            <br />
+            aberglof@kth.se
           </div>
           <div className="section__column">
             <img className="image-100" src={ao} alt="Ao" />
             Ao Xu
+            <br />
+            aox@kth.se
           </div>
           <div className="section__column">
             <img className="image-100" src={bosen} alt="Bosen" />
             Bosen Cheng
+            <br />
+            bosen@kth.se
           </div>
           <div className="section__column">
             <img className="image-100" src={przemyslaw} alt="Przemyslaw" />
             Przemyslaw Kowalewski
+            <br />
+            pkow@kth.se
           </div>
         </div>
         <h4 className="section__title">Individual Contributions</h4>
-        <p>Insert text here</p>
+        <p>
+          <b>Albin</b> has been working with the controls, as well as adding
+          sound effects to the game, making it a multisensory experience.
+        </p>
+        <p>
+          <b>Amalia</b> has been working with the advertisement and onboarding
+          structure, as well as the interviews and user questions.
+        </p>
+        <p>
+          <b>Ao and Bosen</b> has been working with graphics of the game, making
+          everything look delicious.
+        </p>
+        <p>
+          <b>Przemyslaw</b> has been in charge of keeping the project together
+          tech wise, as well as working with the deployment, sockets and the
+          game structure.
+        </p>
         <h4 className="section__title">Lessons learned</h4>
-        <p>Insert text here</p>
+        <p>
+          During this project, we've learned a lot about game design and how to
+          work in a group where noone knows everything, but everyone knows
+          something. We have deepened our skills in our preffered tech stacks,
+          and learned new tools in the area of graphics and interaction.
+        </p>
+        <p>
+          Working with Three.js instead of, for example, Unity, has posed some
+          interesting challanges for us, where for some the setup worked
+          smoothly, and for others their OS put hinders in the way. Sometimes
+          also the socket sharing and connection between phone and computer
+          posed problems, but overall this was not as big of an issue as ealier
+          similar projects in this course has explained that they faced. The
+          problems raised has also helped us in trying to develop for as many
+          different users and their phones as possible.
+        </p>
+        <p>
+          Another interesting finding from our demos, was that even though users
+          wanted the game to look realistic, that wasn't the most immersive
+          aspect. Instead, the game elements and learning how to play the game,
+          as well as hack the game, was the thing keeping people attracted to
+          it.
+        </p>
       </div>
     </div>
   );

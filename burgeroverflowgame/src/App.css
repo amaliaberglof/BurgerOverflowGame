@@ -55,6 +55,11 @@ body {
   align-content: center; */
 }
 
+.section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 p span {
   display: flex;
 }
@@ -82,6 +87,8 @@ p span {
 .section__row {
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .section__column {
@@ -114,12 +121,17 @@ p span {
   overflow: hidden;
 }
 
+.img-width-500 {
+  width: 500px;
+  margin-bottom: 30px;
+}
+
 img {
   transition: transform 0.5s ease;
 }
 
 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .navbar-toggler-icon {
